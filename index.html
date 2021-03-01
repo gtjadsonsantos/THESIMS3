@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sims 3</title>
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bar-top,.menu {
+            width: 800px;
+            background-color: rgb(31, 3, 58);
+            height: 40px;
+        } 
+        .logo  {
+            width: 196px;
+            height: 200px;
+        }
+        .banner {
+            width: 600px;
+            height: 200px;
+        } 
+        .container-logo-banner {
+            height: 199px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+        }
+        main {
+            display: flex;
+        }
+        main article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+        }
+        main article p {
+            word-wrap: break-word;
+
+        }
+        main article img {
+            width: 280px;
+           
+            height:  150px;
+        }
+        main article img:nth-child(2) {
+            border: rgb(31, 3, 58) solid 3px;
+        }
+        main article img:nth-child(3) {
+            border-radius: 0.5em;
+        }
+        footer {
+            width: 800px;
+            height: 40px;
+            background-color: rgb(31, 3, 58);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bar-top"></div>
+        <div class="container-logo-banner" >
+            <img class="logo" src="imgs/logo.png" alt="logo">
+            <img class="banner" src="imgs/banner.png" alt="banner">
+        </div>
+        <nav class="menu">
+            <a href="home">HOME</a>
+            <a href="jogos">JOGOS</a>
+            <a href="creditos">CREDITOS</a>
+            <a href="fale-conosco">FALE CONOSCO</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>The Sims</h2>
+            <img src="imgs/img_artigo_1.jpg" alt="artigo 1">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            </p>
+        </article>
+        <article>
+            <h2>Sims 3D</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.     
+                <a href="leia-mais">LEIA MAIS</a>
+            </p>
+            <img src="imgs/img_artigo_2.jpg" alt="artigo 2">
+        </article>
+    </main>
+    <footer>
+        <p>@Produção Senac - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
